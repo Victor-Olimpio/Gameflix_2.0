@@ -279,6 +279,99 @@
     
 }
 
+/* CONFIGURAÇÕES DE BASE - 450PX */
+
+@media screen and (min-width: 450px) {
+    .principal-game .principal-title {
+        font-size: 0.9em;
+
+        margin-top: 5px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        margin-left: 50px;
+    }
+
+    .buttons-principal a {
+        text-decoration: none;
+        color: var(--RealBlack);
+        font-size: 0.9em;
+    
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    
+        background-color: var(--White);
+    
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .classification-game .final-nota {
+        font-size: 1.1em;
+        color: var(--White);
+        font-weight: normal;
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    
+        background-color: rgba(63, 63, 63, 0.300);
+    
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+    
+        border: 1px solid #FFFFFF31;
+    
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .principal-game .description-game {
+        font-size: 1.1em;
+        text-align: justify;
+        color: var(--Gray);
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        margin-left: 50px;
+    
+        width: 60%;
+    }
+
+    .container-contatos {
+        height: 190px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+        padding-top: 10px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+    
+        list-style: none;
+    }
+}
+
 /* CONFIGURAÇÕES DE BASE - 500PX */
 
 @media screen and (min-width: 500px) {
