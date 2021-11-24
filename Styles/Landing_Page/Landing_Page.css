@@ -1,0 +1,623 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES - FONTES USADAS */
+
+@font-face {
+    font-family: 'Gameflix';
+    font-size: normal;
+    font-weight: normal;
+    src: url('../../Fonts/Bebas_Neue/Arquivos_Fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+/* VARIÁVEIS - CORES */
+
+:root {
+    --Red:#E50914;
+    --Gray:#AAAAAA;
+    --Black:#141414;
+    --White:#FFFFFF;
+    --DWhite:#CECECE;
+    --RealBlack:#000000;
+}
+
+/* CONFIGURAÇÕES - GLOBAIS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* CONFIGURAÇÕES DE BASE - BODY*/
+
+body {
+    color: var(--White);
+    background-color: var(--RealBlack);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONFIGURAÇÕES DE BASE - HEADER & MENU */
+
+.background-thumb {
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 10px solid #303030;
+    border-left: 0px;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.900), rgba(0, 0, 0, 0.500)),
+    url(../../Images/Background/Background_Spider_Man1300.jpg)
+}
+
+header .container-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+.container-menu .gameflix-logo {
+    font-size: 1.6em;
+    color: var(--Red);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.300);
+    font-family: 'Gameflix', Arial, Helvetica, sans-serif;
+}
+
+.options-menu .iniciar-sessão {
+    font-size: 1.2em;
+    color: var(--White);
+    text-decoration: none;
+
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    background-color: var(--Red);
+}
+
+.options-menu .iniciar-sessão:hover {
+    color: var(--Red);
+    background-color: var(--White);
+
+    transition: .3s ease all;
+}
+
+.options-menu .iniciar-sessão:not(:hover) {
+    color: var(--White);
+    background-color: var(--Red);
+
+    transition: .3s ease all;
+}
+
+.container-main {
+    display: block;
+    text-align: center;
+
+    margin-top: 160px;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+}
+
+.container-main .title-principal h1 {
+    font-size: 2.5em;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+
+    margin-bottom: 5px;
+}
+
+.container-main .title-principal h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.container-main .principal-text {
+    font-size: 1.3em;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+}
+
+.container-main .e-mail-pessoa {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.e-mail-pessoa .mail-user {
+    font-size: 1.2em;
+
+    border: 1px solid rgba(0, 0, 0, 0.300);
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 200px;
+
+    width: 500px;
+    height: 60px;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.e-mail-pessoa .start-button {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--White);
+
+    cursor: pointer;
+    
+    border: 1px solid rgba(0, 0, 0, 0.300);
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 200px;
+    margin-left: 0px;
+
+    width: 150px;
+    height: 55px;
+
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+    background-color: var(--Red);
+}
+
+
+.e-mail-pessoa .mail-user:focus, .start-button:focus {
+    outline: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.300);
+}
+
+/* CONFIGURAÇÃO BASE - MAIN (REAL) */
+
+.container-sub {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 5px solid #303030;
+    border-left: 0px;
+}
+
+.container-sub .title-sub { 
+    font-size: 2.5em;
+
+    width: 35%;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 70px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+}
+
+.container-sub img {
+    margin-top: 70px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    margin-left: 0px;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container-sub-dois {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 5px solid #303030;
+    border-left: 0px;
+}
+
+.container-sub-dois .title-sub {
+    text-align: left;
+    
+    font-size: 2.5em;
+
+    width: 40%;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    margin-left: 10px;
+}
+
+.container-sub-dois img {
+    margin-top: 70px;
+    margin-right: 0px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container-sub-tres {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 5px solid #303030;
+    border-left: 0px;
+}
+
+.container-sub-tres .title-sub {
+    font-size: 2.5em;
+
+    width: 45%;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 70px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+}
+
+.container-sub-tres img {
+    margin-top: 70px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    margin-left: 0px;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container-sub-quatro {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 5px solid #303030;
+    border-left: 0px;
+}
+
+.container-sub-quatro .title-sub {
+    text-align: left;
+    
+    font-size: 2.5em;
+
+    width: 40%;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    margin-left: 10px;
+}
+
+.container-sub-quatro img {
+    margin-top: 70px;
+    margin-right: 0px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* CONFIGURAÇÃO BASE - PERGUNTAS FREQUENTES */
+
+.question-container .title-question {
+    text-align: center;
+
+    font-size: 2.7em;
+
+    margin-top: 80px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+}
+
+.question-container summary {
+    display: block;
+
+    text-align: left;
+    font-size: 1.7em;
+
+    width: 50%;
+
+    background-color: #2B2B2B;
+
+    margin: 0 auto;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    margin-bottom: 10px;
+}
+
+.question-container summary::-webkit-details-marker {
+    display: none;
+}
+ 
+.question-container summary:before {
+    display: inline-flex;
+    content: "+ ";
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 0;
+    width: 20px;
+}
+ 
+.question-container details[open] summary:before {
+    display: inline-flex;
+    content: "- ";
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 0;
+    width: 20px;
+}
+
+.question-container details p  {
+    font-size: 1.6em;
+
+    display: block;
+
+    width: 50%;
+
+    text-align: justify;
+
+    margin: auto;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-bottom: 10px;
+
+    background-color: #3D3D3D;
+}
+
+.question-container .final-details {
+    margin-bottom: 30px;
+}
+
+.last-e-mail {
+    display: block;
+    text-align: center;
+
+    margin-top: 160px;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 5px solid #303030;
+    border-left: 0px;
+}
+
+.last-e-mail h4 {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: normal;
+
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+}
+
+.last-e-mail .e-mail-pessoa {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.last-e-mail .e-mail-pessoa .mail-user {
+    font-size: 1.2em;
+
+    border: 1px solid rgba(0, 0, 0, 0.300);
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+
+    width: 500px;
+    height: 60px;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.last-e-mail .e-mail-pessoa .start-button {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--White);
+
+    cursor: pointer;
+    
+    border: 1px solid rgba(0, 0, 0, 0.300);
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+
+    width: 150px;
+    height: 55px;
+
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+    background-color: var(--Red);
+}
+
+.e-mail-pessoa .start-button:hover {
+    color: var(--Red);
+    background-color: var(--White);
+
+    transition: .3s ease all;
+}
+
+.e-mail-pessoa .start-button:not(:hover) {
+    color: var(--White);
+    background-color: var(--Red);
+
+    transition: .3s ease all;
+}
+
+/* CONFIGURAÇÃO BASE - CONTATOS */
+
+.footer-final {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-final h1 {
+    font-size: 1em;
+    color: #5F5F5F;
+    font-weight: normal;
+
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 140px;
+}
+
+.container-contatos {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 140px;
+
+    list-style: none;
+}
+
+.container-contatos li {
+    font-size: 0.9em; 
+
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+}
+
+.container-contatos a {
+    color: #5F5F5F;
+    font-size: 0.8em;
+    text-decoration: none;
+
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    
+}
+
+.container-contatos a:hover {
+    text-decoration: underline;
+}

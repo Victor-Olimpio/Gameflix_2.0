@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES - FONTES USADAS */
+
+@font-face {
+    font-family: 'Gameflix';
+    font-size: normal;
+    font-weight: normal;
+    src: url('../../Fonts/Bebas_Neue/Arquivos_Fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+/* VARIÁVEIS - CORES */
+
+:root {
+    --Red:#E50914;
+    --Gray:#AAAAAA;
+    --Black:#141414;
+    --White:#FFFFFF;
+    --Green:#22A944;
+    --DWhite:#CECECE;
+    --RealBlack:#000000;
+}
+
+/* CONFIGURAÇÕES - GLOBAIS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* CONFIGURAÇÕES DE BASE - BODY */
+
+body {
+    color: var(--White);
+    background-color: var(--RealBlack);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONFIGURAÇÕES DE BASE - MENU */
+
+header .container-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+.container-menu .gameflix-logo {
+    font-size: 1.6em;
+    color: var(--Red);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.300);
+    font-family: 'Gameflix', Arial, Helvetica, sans-serif;
+
+    margin-top: 0px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.menu-bar {
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-bar .link-menu {
+    color: var(--Gray);
+    text-decoration: none;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.menu-bar .link-menu:hover {
+    color: var(--White);
+
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+    transition: .3s ease all;
+}
+
+.menu-bar .link-menu:not(:hover) {
+    color: var(--Gray);
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    transition: .3s ease all;
+}
+
+.container-menu .menu-bar-dois {
+    font-size: 1.7em;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+.menu-bar-dois .icon-menu {
+    color: var(--Gray);
+    text-decoration: none;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.menu-bar-dois .icon-menu:hover {
+    color: var(--White);
+
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+    transition: .3s ease all;
+}
+
+.menu-bar-dois .icon-menu:not(:hover) {
+    color: var(--Gray);
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    transition: .3s ease all;
+}
+
+/*CONFIGURAÇÕES DE BASE - TRAILER */
+
+.container-trailer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 50px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    
+    background-color: rgba(63, 63, 63, 0.100);
+}
+
+.container-trailer iframe {
+    margin: auto;
+    
+    width: 90%;
+    height: 570px;
+
+    display: block;
+
+    border-radius: 5px;
+}
+
+.back-home {
+    margin: auto;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.back-home a {
+    color: var(--Gray);
+    text-decoration: none;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.back-home a:hover {
+    color: var(--White);
+    transition: .3s ease all;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.black-home a:not(:hover) {
+    color: var(--Gray);
+    transition: .3s ease all;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+/* CONFIGURAÇÃO BASE - CONTATOS */
+
+.footer-final {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-final h1 {
+    font-size: 1em;
+    color: #5F5F5F;
+    font-weight: normal;
+
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.container-contatos {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+
+    list-style: none;
+}
+
+.container-contatos li {
+    font-size: 0.9em;
+
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+}
+
+.container-contatos a {
+    color: #5F5F5F;
+    font-size: 0.8em;
+    text-decoration: none;
+
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    
+}
+
+.container-contatos a:hover {
+    text-decoration: underline;
+}
