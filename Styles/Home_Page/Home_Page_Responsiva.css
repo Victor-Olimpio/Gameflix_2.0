@@ -29,6 +29,271 @@
     box-sizing: border-box;
 }
 
+/* CONFIGURAÇÕES DE BASE - 280PX */
+
+@media screen and (min-width: 280px) {
+    header .container-menu {
+        display: block;
+        align-items: center;
+    }
+
+    .container-menu .gameflix-logo {
+        font-size: 0.8em;
+        color: var(--Red);
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.300);
+        font-family: 'Gameflix', Arial, Helvetica, sans-serif;
+
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        
+    }
+    .menu-bar {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .menu-bar .link-menu {
+        font-size: 0.6em;
+
+        color: var(--Gray);
+        text-decoration: none;
+
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .menu-bar .link-menu:hover {
+        color: var(--White);
+        transition: .3s ease all;
+
+        padding-top: 0px;
+        padding-right: 15px;
+        padding-bottom: 0px;
+        padding-left: 15px;
+
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .container-menu .menu-bar-dois {
+        font-size: 0.5em;
+
+        text-align: center;
+        justify-content: center;
+
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    .menu-bar-dois .icon-menu:hover {
+        color: var(--White);
+
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    
+        transition: .3s ease all;
+    }
+
+    .background-thumb {
+
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+
+        height: 260px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    
+        background-size: cover;
+    }
+
+    .principal-game {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    .principal-game .principal-title {
+        font-size: 0.5em;
+
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+    }
+
+    .principal-game .description-game {
+        font-size: 0.7em;
+        text-align: justify;
+        color: var(--Gray);
+    
+        margin-top: 5px;
+        margin-right: 10px;
+        margin-bottom: 3px;
+        margin-left: 20px;
+    
+        width: 60%;
+    }
+
+    .classification-game .nota-game {
+
+        font-size: 0.7em;
+        color: var(--Green);
+        font-weight: bold;
+    
+        margin-top: 0px;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+
+    .classification-game .year-game {
+        font-size: 0.7em;
+        color: var(--Gray);
+        font-weight: normal;
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    }
+
+    .classification-game .console {
+        font-size: 0.7em;
+        color: var(--White);
+        font-weight: normal;
+    
+        margin-top: 0px;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    
+        background-color: #3F3F3F;
+    
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .classification-game .final-nota {
+        font-size: 0.7em;
+        color: var(--White);
+        font-weight: normal;
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    
+        background-color: rgba(63, 63, 63, 0.300);
+    
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+    
+        border: 1px solid #FFFFFF31;
+    
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .buttons-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        font-size: 0.6em;
+
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    .buttons-principal a {
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+
+    .container-contatos {
+        height: 470px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        text-align: center;
+    
+        padding-top: 10px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+    
+        list-style: none;
+    }
+}
+
 /* CONFIGURAÇÕES DE BASE - 300PX */
 
 @media screen and (min-width: 300px) {
@@ -456,10 +721,10 @@
         flex-wrap: wrap;
         flex-direction: column;
     
-        padding-top: 10px;
+        padding-top: 5px;
         padding-right: 0px;
-        padding-bottom: 10px;
-        padding-left: 10px;
+        padding-bottom: 5px;
+        padding-left: 5px;
     
         margin-top: 0px;
         margin-right: 0px;
@@ -922,6 +1187,260 @@
     }
 }
 
+/* CONFIGURAÇÕES DE BASE - 512PX */
+
+@media screen and (min-width: 512px) {
+    .buttons-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        font-size: 0.7em;
+
+        margin-top: 3px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    .buttons-principal a {
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+}
+
+/* CONFIGURAÇÕES DE BASE - 540PX */
+
+@media screen and (min-width: 540px) {
+    .principal-game .principal-title {
+        font-size: 0.6em;
+
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        margin-left: 50px;
+    }
+
+    .principal-game .description-game {
+        font-size: 1em;
+        text-align: justify;
+        color: var(--Gray);
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 50px;
+    
+        width: 60%;
+    }
+
+    .classification-game .nota-game {
+
+        font-size: 1em;
+        color: var(--Green);
+        font-weight: bold;
+    
+        margin-top: 0px;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        margin-left: 50px;
+    }
+
+    .classification-game .year-game {
+        font-size: 1em;
+        color: var(--Gray);
+        font-weight: normal;
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    }
+
+    .classification-game .console {
+        font-size: 1em;
+        color: var(--White);
+        font-weight: normal;
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    
+        background-color: #3F3F3F;
+    
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+    
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .classification-game .final-nota {
+        font-size: 1;
+        color: var(--White);
+        font-weight: normal;
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    
+        background-color: rgba(63, 63, 63, 0.300);
+    
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+    
+        border: 1px solid #FFFFFF31;
+    
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .buttons-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        font-size: 0.7em;
+
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+}
+
+/* CONFIGURAÇÕES DE BASE - 568PX */
+
+@media screen and (min-width: 568px) {
+    .principal-game .principal-title {
+        font-size: 0.7em;
+
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 3px;
+        margin-left: 30px;
+    }
+
+    .principal-game .description-game {
+        font-size: 1em;
+        text-align: justify;
+        color: var(--Gray);
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    
+        width: 40%;
+    }
+
+    .classification-game .nota-game {
+
+        font-size: 1em;
+        color: var(--Green);
+        font-weight: bold;
+    
+        margin-top: 0px;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    }
+
+    .classification-game .year-game {
+        font-size: 1em;
+        color: var(--Gray);
+        font-weight: normal;
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    }
+
+    .classification-game .console {
+        font-size: 1em;
+        color: var(--White);
+        font-weight: normal;
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    
+        background-color: #3F3F3F;
+    
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+    
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .classification-game .final-nota {
+        font-size: 1em;
+        color: var(--White);
+        font-weight: normal;
+    
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    
+        background-color: rgba(63, 63, 63, 0.300);
+    
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+    
+        border: 1px solid #FFFFFF31;
+    
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .buttons-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        font-size: 0.7em;
+
+        margin-top: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+}
+
 /* CONFIGURAÇÕES DE BASE - 600PX */
 
 @media screen and (min-width: 600px) {
@@ -1016,6 +1535,116 @@
         border-top-left-radius: 5px;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
+    }
+}
+
+/* CONFIGURAÇÕES DE BASE - 640PX */
+
+@media screen and (min-width: 640px) {
+    .principal-game .principal-title {
+        font-size: 0.8em;
+
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 3px;
+        margin-left: 30px;
+    }
+
+    .principal-game .description-game {
+        font-size: 1.1em;
+        text-align: justify;
+        color: var(--Gray);
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    
+        width: 55%;
+    }
+
+    .classification-game .nota-game {
+
+        font-size: 1.1em;
+        color: var(--Green);
+        font-weight: bold;
+    
+        margin-top: 0px;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    }
+
+    .classification-game .year-game {
+        font-size: 1.1em;
+        color: var(--Gray);
+        font-weight: normal;
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    }
+
+    .classification-game .console {
+        font-size: 1.1em;
+        color: var(--White);
+        font-weight: normal;
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    
+        background-color: #3F3F3F;
+    
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+    
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .classification-game .final-nota {
+        font-size: 1.1em;
+        color: var(--White);
+        font-weight: normal;
+    
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    
+        background-color: rgba(63, 63, 63, 0.300);
+    
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+    
+        border: 1px solid #FFFFFF31;
+    
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .buttons-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        font-size: 0.8em;
+
+        margin-top: 3px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
     }
 }
 
@@ -1145,6 +1774,91 @@
         margin-left: 10px;
     
         list-style: none;
+    }
+}
+
+/* CONFIGURAÇÕES DE BASE - 717PX */
+
+@media screen and (min-width: 717px) {
+    .principal-game .description-game {
+        font-size: 1em;
+        text-align: justify;
+        color: var(--Gray);
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    
+        width: 40%;
+    }
+}
+
+/* CONFIGURAÇÕES DE BASE - 720PX */
+
+@media screen and (min-width: 720px) {
+    .principal-game .description-game {
+        font-size: 1em;
+        text-align: justify;
+        color: var(--Gray);
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    
+        width: 40%;
+    }
+}
+
+/* CONFIGURAÇÕES DE BASE - 731PX */
+
+@media screen and (min-width: 731px) {
+    .principal-game .description-game {
+        font-size: 1em;
+        text-align: justify;
+        color: var(--Gray);
+    
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    
+        width: 40%;
+    }
+}
+
+/* CONFIGURAÇÕES DE BASE - 760PX */
+
+@media screen and (min-width: 760px) {
+    .buttons-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        font-size: 1em;
+
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+}
+
+/* CONFIGURAÇÕES DE BASE - 823PX */
+
+@media screen and (min-width: 823px) {
+    .buttons-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        font-size: 0.9em;
+
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
     }
 }
 
