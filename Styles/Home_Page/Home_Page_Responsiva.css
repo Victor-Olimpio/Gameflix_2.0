@@ -2118,7 +2118,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-color: rgb(0, 0, 0);
-        background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.600)300%),
+        background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.300)100%),
         url(../../Images/Background/Background_FIFA_22.jpg);
     }
     
